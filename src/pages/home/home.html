@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Prova Bossini
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let nome of nomes" (click)="onItemClick(nome)">
+    <ion-card-header>
+      {{nome.teste}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title>
+          {{nome.title}}
+    </ion-card-title>
+    <p>
+       {{nome.content}}
+       </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
